@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>LOGIN PAGE</title>
+    </head>
+    <body>
+    <div>
+        <table>
+            <tr>
+                <td>
+                    <img src = "https://storage.googleapis.com/profit-prod/wp-content/uploads/2022/07/d4eaf149-task-management.jpg"  height =700  width=700/> 
+                </td><br> 
+                    <style>
+                     body {
+                        background-color: solid white;
+                        box-shadow: 0cap;
+                        border-radius: 8px;
+                    }
+                    h1  {
+                        text-align: center;
+                    }
+                    p {
+                        text-align: center;
+                    }
+                    img {
+                        vertical-align: top;
+                        margin-top: -50px;
+                        border-radius: 10px;
+                    }
+                    input{
+                        padding: 7px;
+                        width: 500px;
+                    }
+                    label {
+                        text-align: right;
+                    }
+                    form {
+                        margin-left: 100px;
+                    }
+                    </style>
+                <br>
+                <br>
+                <td>
+                    <h1>Hi hello welcome to task management application!</h1>
+                    <p>lets do these and make you work easy!</p>
+                    <form>
+                       <label>Username:</label><br>
+                       <input type = "text" id = "username"  name = "username" placeholder="Username" style = "color: black; background-color:azure" font-stack: aria-label>
+                       <br>
+                       <br>
+                       <label>Password:</label><br>
+                       <input type = "password" id = "password"  name = "password" placeholder = "password" style = "color: black; background-color:azure">
+                       <br>
+                       <br>
+                       <button type = "button" onclick="login()">Login</button>
+                    </form>
+                    <script>
+                        function login() {
+                            let user = document.getElementById("username").value;
+                            let pass = document.getElementById("password").value;
+                            if(user == "admin" && pass == "1234")
+                            {
+                                window.location.href = "http://localhost:5173/TaskMan/";
+                            } 
+                            else
+                            {
+                                alert("Invalid Login");
+                            }
+                        }
+                    </script>
+                </td>
+            </tr>
+        </table>
+    <div>
+</body>
+</html>
